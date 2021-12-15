@@ -1,33 +1,54 @@
+import React from 'react';
 import Header from './pages/header.js';
 import LandingPage  from './pages/LandingPage.js';
 import Preloader from './pages/preloader.js';
 import Footer from './pages/footer.js';
 import Feedback from './pages/feedback.js';
+import Login from './pages/login.js';
 
 
 
 
-import './App.css';
+import {
 
-function App() {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Link,
+  Redirect
+
+} from 'react-router-dom';
 
 
+class App extends React.Component  {
 
+/*
+
+     <Preloader />
+     <Header / > 
+     <LandingPage /> 
+     <Feedback />
+     <Footer />
+     <AboutUs />
+
+*/
+
+render () {
 
   return (
-    <div className="App">
     
-     < Preloader />
-     < Header / > 
-     < LandingPage /> 
-     <Feedback />
-     < Footer />
+    
+   <Login />
 
 
 
-    </div>
 
-  );
+
+  )
+
+  }
+
+
 }
 
 export default App;
