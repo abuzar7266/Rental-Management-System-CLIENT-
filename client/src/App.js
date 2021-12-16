@@ -5,8 +5,8 @@ import Preloader from './pages/preloader.js';
 import Footer from './pages/footer.js';
 import Feedback from './pages/feedback.js';
 import Login from './pages/login.js';
-
-
+import SignUp from './pages/signup.js';
+import ForgotPassword from './pages/forgotpassword.js';
 
 
 import {
@@ -38,7 +38,7 @@ render () {
   return (
     
     
-   <Login />
+   <ForgotPassword />
 
 
 
